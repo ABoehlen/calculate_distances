@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Calculate distances</title>
+  <style type="text/css">
+    h3,form { font-family:Helvetica,sans-serif; }
+    h3 { font-size:18px; }
+    form { font-size:14px; }
+  </style>
+  <script language="JavaScript">
+    <!--
+    function distance() {
+      function deg2rad(param) {
+        var output = Math.PI * param / 180;
+        return output;
+      }
+      function rad2deg(param) {
+        var output = 180 * param / Math.PI;
+        return output;
+      }
+      function min2dec(param) {
+        var output = param / 60;
+        return output;
+      }
+      var x1 = document.calculator.xdeg1.value * 1 + min2dec(document.calculator.xmin1.value);
+      x1 = deg2rad(x1);
+      var y1 = document.calculator.ydeg1.value * 1 + min2dec(document.calculator.ymin1.value);
+      y1 = deg2rad(y1);
+      var x2 = document.calculator.xdeg2.value * 1 + min2dec(document.calculator.xmin2.value);
+      x2 = deg2rad(x2);
+      var y2 = document.calculator.ydeg2.value * 1 + min2dec(document.calculator.ymin2.value);
+      y2 = deg2rad(y2);
+      var delta_l = x1 - x2;
+      if (delta_l < 0) {
+        delta_l = delta_l * -2 + delta_l;
+      }
+      var cos_e = Math.sin(y1) * Math.sin(y2) + Math.cos(y1) * Math.cos(y2) * Math.cos(delta_l);
+      var r = 6371.0088; // mean earth radius
+      var dist = r * rad2deg(Math.acos(cos_e)) * 2 * Math.PI / 360;
+      dist = Math.round(dist);
+      document.calculator.erg.value = dist;
+    }
+    //->
+  </script>
+</head>
+<body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 204);" alink="#000099" link="#000099" vlink="#990099">
+<h3>Calculates the distance between any two points on the earth's surface</h3>
+  <form name="calculator">
+    <input name="xdeg1" size="5" type="text" />&deg;
+    <input name="xmin1" size="5" type="text" />&rsquo;&nbsp; Longitude Point A<br />
+    <input name="ydeg1" size="5" type="text" />&deg; 
+    <input name="ymin1" size="5" type="text" />&rsquo;&nbsp; Latitude Point A<br />
+    <br />
+    <input name="xdeg2" size="5" type="text" />&deg;
+    <input name="xmin2" size="5" type="text" />&rsquo;&nbsp; Longitude Point B<br />
+    <input name="ydeg2" size="5" type="text" />&deg;
+    <input name="ymin2" size="5" type="text" />&rsquo;&nbsp; Latitude Point B<br />
+    <br />
+    <input value="Calculate the distance in km" onclick="distance()" type="button" /><br />
+    <br />
+    The distance between the two points is:<br />
+    <br />
+    <input name="erg" size="5" type="text" /> km<br />
+    <br />
+    <input value="Close window" onclick="self.close()" type="button" />
+  </form>
+</body>
+</html>
