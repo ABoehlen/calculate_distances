@@ -12,14 +12,14 @@
 </head>
 <body>
   <h1>Calculate distances using a JavaScript programme &ndash; how it works</h1>
-  <p> This calculation is made by means of the side cosine theorem, since a spherical (Eulerian) triangle can be formed with point 1, point 2 and the north pole. The distance between point 1 and point 2 is therefore the great circle arc g. So the formula is:</p>
+  <p> This calculation is made by means of the side cosine theorem, since a spherical (Eulerian) triangle can be formed with place 1, place 2 and the north pole. The distance between place 1 and place 2 is therefore the great circle arc g. So the formula is:</p>
   <p>cos g = sin &#966;1 sin &#966;2 + cos &#966;1 cos &#966;2 cos
   &#916;&#955;</p>
   <p>(&#966;: Latitude / &#916;&#955;: Difference of longitudes)</p>
   <p>From this the kilometre value can be calculated using the following formula: </p>
   <p>Distance in kilometres = r g 2 &#960; / 360&deg;</p>
   <p>where the radius r is assumed to be the mean radius of the Earth, 6371.0088 km. [1]</p>
-  <p>The given coordinates are converted into decimal degrees by means of the function <span style="font-style: italic;">min2dec</span> and then converted into radians by means of the function <span style="font-style: italic;">deg2rad</span>, because the methods sin and cos of the JavaScript object Math expect the data in radians. The method acos (arc cos), on the other hand, returns the result in radians, which is converted back into degrees via the function <span style="font-style: italic;">rad2deg</span>. Finally, the result is rounded to 3 decimal places using the round method of the Math object.</p>
+  <p>The given coordinates are converted into decimal degrees by means of the function <span style="font-style: italic;">min2dec</span> and then converted into radians by means of the function <span style="font-style: italic;">deg2rad</span>, because the methods sin and cos of the JavaScript object Math expect the data in radians. The method acos (arc cos), on the other hand, returns the result in radians, which is converted back into degrees via the function <span style="font-style: italic;">rad2deg</span>. Finally, the result is rounded to an integer value using the round method of the Math object.</p>
   <p>18.11.2004 Adrian B&ouml;hlen</p>
   <p>Based on: Bartsch, Hans-Jochen: Mathematische Formeln, 1967, pp. 225 et seq.</p>
   <p>[1] <a target="_blank" href="https://en.wikipedia.org/wiki/Earth_radius#Mean_radius">https://en.wikipedia.org/wiki/Earth_radius#Mean_radius </a></p>

@@ -35,7 +35,7 @@
         delta_l = delta_l * -2 + delta_l;
       }
       var cos_e = Math.sin(y1) * Math.sin(y2) + Math.cos(y1) * Math.cos(y2) * Math.cos(delta_l);
-      var r = 6371.0088; // mean earth radius
+      var r = 6371.0088; // mean Earth radius
       var dist = r * rad2deg(Math.acos(cos_e)) * 2 * Math.PI / 360;
       dist = Math.round(dist);
       document.calculator.erg.value = dist;
@@ -44,17 +44,17 @@
   </script>
 </head>
 <body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 204);" alink="#000099" link="#000099" vlink="#990099">
-<h3>Calculates the distance between any two points on the earth's surface</h3>
+<h3>Calculates the distance between two places on Earth</h3>
   <form name="calculator">
     <input name="xdeg1" size="5" type="text" />&deg;
-    <input name="xmin1" size="5" type="text" />&rsquo;&nbsp; Longitude Point A<br />
+    <input name="xmin1" size="5" type="text" />&rsquo;&nbsp; Longitude Place A<br />
     <input name="ydeg1" size="5" type="text" />&deg; 
-    <input name="ymin1" size="5" type="text" />&rsquo;&nbsp; Latitude Point A<br />
+    <input name="ymin1" size="5" type="text" />&rsquo;&nbsp; Latitude Place A<br />
     <br />
     <input name="xdeg2" size="5" type="text" />&deg;
-    <input name="xmin2" size="5" type="text" />&rsquo;&nbsp; Longitude Point B<br />
+    <input name="xmin2" size="5" type="text" />&rsquo;&nbsp; Longitude Place B<br />
     <input name="ydeg2" size="5" type="text" />&deg;
-    <input name="ymin2" size="5" type="text" />&rsquo;&nbsp; Latitude Point B<br />
+    <input name="ymin2" size="5" type="text" />&rsquo;&nbsp; Latitude Place B<br />
     <br />
     <input value="Calculate the distance in km" onclick="distance()" type="button" /><br />
     <br />
