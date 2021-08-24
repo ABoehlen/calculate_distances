@@ -28,9 +28,9 @@ After clicking on the button "Calculate the distance in km" the result will be g
 ### Example
 Bern: 7° 27' / 46° 57' (or 7.45° / 46.95°)
 
-Singapore: 103° 50' / 1° 17' (or 103.83° / 1.28°)
+Avarua: -159° 47' / -21° 12' (or -159.78° / -21.20°)
 
-The result should be: 10387 km
+The result should be: 16929 km
 
 ## License
 
