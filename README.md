@@ -3,6 +3,8 @@
 ## Purpose
 calculate_distances is a simple JavaScript which can be included in any html page and calculates the average distance between two places on Earth.
 
+This tool is used for the "Geomatikausbildung" (education of the geomatic trainees) at the "Bundesamt für Landestopografie swisstopo".
+
 ## Background
 Since the Earth is a geoid, calculating distances is very complex if the results have to be accurate. But for lower accuracy requirements, the Earth can be assumed to be a sphere, which greatly simplifies the calculation. The necessary formulas are described e.g. here \[1\]. Earth's mean radius is 6,371.0088 km \[2\].
 
