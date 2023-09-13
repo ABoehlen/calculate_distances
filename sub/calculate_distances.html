@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Calculate distances</title>
+	<link rel="stylesheet" href="../style.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="../js/calculator.js"></script>
+</head>
+<body class="calc_win">
+	<h3>Calculates the distance between two places on Earth</h3>
+	<form action="" name="calculator">
+		<input name="xdeg1" size="5" type="text" />&deg;
+		<input name="xmin1" size="5" type="text" />&rsquo;&nbsp; Longitude Place A<br />
+		<input name="ydeg1" size="5" type="text" />&deg; 
+		<input name="ymin1" size="5" type="text" />&rsquo;&nbsp; Latitude Place A<br />
+		<br />
+		<input name="xdeg2" size="5" type="text" />&deg;
+		<input name="xmin2" size="5" type="text" />&rsquo;&nbsp; Longitude Place B<br />
+		<input name="ydeg2" size="5" type="text" />&deg;
+		<input name="ymin2" size="5" type="text" />&rsquo;&nbsp; Latitude Place B<br />
+		<br />
+		<input value="Calculate the distance in km" onclick="main();" type="button" /><br />
+		<br />
+		The distance between the two places is:<br />
+		<br />
+		<input name="erg" size="5" type="text" /> km<br />
+		<br />
+		<input value="Refresh window" onclick="history.go(0);" type="button" />
+		<input value="Close window" onclick="self.close();" type="button" />
+	</form>
+</body>
+</html>
