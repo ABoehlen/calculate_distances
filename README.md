@@ -6,7 +6,7 @@ calculate_distances is a simple JavaScript which can be included in any html pag
 This tool is used for the "Geomatikausbildung" (education of the geomatic trainees) at the "Bundesamt für Landestopografie swisstopo".
 
 ## Background
-Since the Earth is a geoid, calculating distances is very complex if the results have to be accurate. But for lower accuracy requirements, the Earth can be assumed to be a sphere, which greatly simplifies the calculation. The necessary formulas are described e.g. here \[1\]. Earth's mean radius is 6,371.0088 km \[2\].
+Since the Earth is a geoid, calculating distances is very complex if the results have to be accurate. But for lower accuracy requirements, the Earth can be assumed to be a sphere, which greatly simplifies the calculation. The necessary formulas are described e.g. here \[1\]. Earth's mean radius is 6,371 km \[2\].
 
 ## System requirements
 None, except for a web browser with JavaScript enabled.
@@ -28,9 +28,9 @@ Clicking on the "Start here" link opens a new small window where the geographic 
 After clicking on the button "Calculate the distance in km" the result will be given in the field below.
 
 ### Example
-Bern: 7° 27' / 46° 57' (or 7.45° / 46.95°)
+Bern, CH: 7° 27' / 46° 57' (or 7.45° / 46.95°)
 
-Avarua: -159° 47' / -21° 12' (or -159.78° / -21.20°)
+Avarua, CK: -159° 47' / -21° 12' (or -159.78° / -21.20°)
 
 The result should be: 16929 km
 
