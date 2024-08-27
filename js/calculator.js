@@ -1,8 +1,8 @@
-// calculator.js V1.2 11.09.2023
+// calculator.js V1.3 27.08.2024
 // Autor: Adrian Boehlen
 //
 // Script berechnet die Distanz zweier Punkte auf der Erdoberflaeche
-// unter Annahme, die Erde sei eine Kugel mit r = 6371.0088 km
+// unter Annahme, die Erde sei eine Kugel mit r = 6371 km
 
 function main() {
   var x1 = document.calculator.xdeg1.value * 1;
@@ -40,7 +40,7 @@ function main() {
   }
 
   var cos_e = Math.sin(y1) * Math.sin(y2) + Math.cos(y1) * Math.cos(y2) * Math.cos(delta_l);
-  var r = 6371.0088; // mean Earth radius
+  var r = 6371; // mean Earth radius in km
   var dist = r * rad2deg(Math.acos(cos_e)) * 2 * Math.PI / 360;
   dist = Math.round(dist);
   document.calculator.erg.value = dist;
